@@ -3,6 +3,7 @@
 	<xsl:import href="./lib/layout.xsl"/>
 	<xsl:import href="./lib/styles.xsl"/>
 	<xsl:import href="./lib/components-xcare.xsl"/>
+	<xsl:output method="xml" version="1.0" indent="yes"/>
 	<xsl:template match="/">
 		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
 			<fo:layout-master-set>
@@ -17,9 +18,15 @@
 				</xsl:call-template>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
-						<fo:block xsl:use-attribute-sets="underline title-1">
+						<fo:block xsl:use-attribute-sets="underline h1">
 						DEBUG DOC
 					</fo:block>
+					Bonjour cher c<xsl:apply-templates select="/*/@patFirstName"/><xsl:apply-templates select="/*/@patLastName"/>
+				<fo:block xsl:use-attribute-sets="h1">Graphique + tableau</fo:block>
+						<xsl:apply-templates select="/*/grf_temperature"/>
+						<fo:block xsl:use-attribute-sets="hr"/>
+						<xsl:apply-templates select="/*/grf_temperature" mode="graph"/>
+						<fo:block xsl:use-attribute-sets="hr"/>
 						<xsl:apply-templates select="/*/*"/>
 					</fo:block>
 				</fo:flow>
