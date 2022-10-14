@@ -26,4 +26,11 @@
 <xsl:template match="s">
 	<fo:inline xsl:use-attribute-sets="s" ><xsl:apply-templates select="*|text()"/></fo:inline>
 </xsl:template>
+<xsl:template match="div[contains(@style,'text-align: ')]">
+<xsl:variable name="alignTypeWithPonctuation" select="substring(@style,13)"/>
+<xsl:variable name="alignType" select="substring($alignTypeWithPonctuation,1,string-length($alignTypeWithPonctuation)-1)"/>
+	<fo:block text-align="{$alignType}">
+		<xsl:apply-templates select="*|text()"/>
+	</fo:block>
+</xsl:template>
 </xsl:stylesheet>
