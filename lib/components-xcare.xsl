@@ -3,11 +3,11 @@
 <xsl:include href="./components-richtext.xsl"/>
 	<xsl:template match="*">
 		<fo:block border="0.3mm solid red" padding="2mm">
-			style : <xsl:value-of select="@style"/>
+			style : <xsl:value-of select="@style"/> / name : <xsl:value-of select="name()"/>
 			<fo:block font-size="8pt" font-style="italic">
-				<xsl:value-of select="name()"/>
 				<fo:block/>
-				label/unformat : <xsl:value-of select="@label"/> / <xsl:value-of select="@unformattedLabel"/>
+				label/unformat : <xsl:value-of select="@label"/> / <xsl:value-of select="@unformattedLabel"/><fo:block/>
+				content : <xsl:apply-templates select="*|text()"/>
 			</fo:block>
 		</fo:block>
 	</xsl:template>
