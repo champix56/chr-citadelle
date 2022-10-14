@@ -68,11 +68,39 @@
 			<xsl:apply-templates select="*|text()"/>
 		</fo:inline>
 	</xsl:template>
-	<xsl:template match="div[contains(@style,'text-align: ')]">
+	<xsl:template match="div[contains(@style,'margin')]" priority="2">
+		<!--exception pour les div avec des style margin-->
+		<xsl:variable name="colonPosition">
+			<xsl:call-template name="indexOfChar">
+				<xsl:with-param name="string" select="@style"/>
+				<xsl:with-param name="char">:</xsl:with-param>
+			</xsl:call-template>
+		</xsl:variable>
+		<xsl:variable name="margin">
+			<xsl:value-of select="substring(@style,1,$colonPosition - 1 )"/>
+		</xsl:variable>
+		<!--<xsl:variable name="marginType">
+			<xsl:value-of select="substring(@style,8,$colonPosition - 8)"/>
+		</xsl:variable>-->
+		<xsl:variable name="propertyValueWithSemicolon" select="substring(@style,$colonPosition+2)"/>
+		<xsl:variable name="propertyValue" select="substring($propertyValueWithSemicolon,1,string-length($propertyValueWithSemicolon)-1)"/>
+		<xsl:element name="fo:block">
+			<xsl:attribute name="{$margin}"><xsl:value-of select="$propertyValue"/></xsl:attribute>
+				MARGIN - <xsl:value-of select="$margin"/>
+			<fo:block/>
+			<xsl:apply-templates select="*|text()"/>
+		</xsl:element>
+	</xsl:template>
+	<!--	
+
+		deprecié et remplacé par div[@style]
+
+-->
+	<!--<xsl:template match="div[contains(@style,'text-align: ')]">
 		<xsl:variable name="alignTypeWithPonctuation" select="substring(@style,13)"/>
 		<xsl:variable name="alignType" select="substring($alignTypeWithPonctuation,1,string-length($alignTypeWithPonctuation)-1)"/>
 		<fo:block text-align="{$alignType}">
 			<xsl:apply-templates select="*|text()"/>
 		</fo:block>
-	</xsl:template>
+	</xsl:template>-->
 </xsl:stylesheet>
