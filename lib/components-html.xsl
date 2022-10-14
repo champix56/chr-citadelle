@@ -12,4 +12,9 @@
 		<xsl:apply-templates select="*|text()"/>
 	</fo:inline>
 </xsl:template>
+<xsl:template match="u">
+	<fo:inline xsl:use-attribute-sets="underline">
+		<xsl:apply-templates select="*|text()"/>
+	</fo:inline>
+</xsl:template>
 </xsl:stylesheet>
