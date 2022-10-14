@@ -17,4 +17,10 @@
 		<xsl:apply-templates select="*|text()"/>
 	</fo:inline>
 </xsl:template>
+<xsl:template match="sup">
+	<fo:inline xsl:use-attribute-sets="sup" ><xsl:apply-templates select="*|text()"/></fo:inline>
+</xsl:template>
+<xsl:template match="sub">
+	<fo:inline xsl:use-attribute-sets="sub" ><xsl:apply-templates select="*|text()"/></fo:inline>
+</xsl:template>
 </xsl:stylesheet>
