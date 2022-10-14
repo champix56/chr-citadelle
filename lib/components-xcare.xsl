@@ -10,8 +10,7 @@
 			</fo:block>
 		</fo:block>
 	</xsl:template>
-
-	<xsl:template match="*[@style='txt' or @style='textArea']">
+	<xsl:template match="*[@style='txt'] | *[@style='txtArea'] | *[@style='date' ]">
 		<xsl:value-of select="."/>
 	</xsl:template>
 	<xsl:template match="*[@style='lbl']">
@@ -23,5 +22,10 @@
 				<xsl:value-of select="@label"/>
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+	<xsl:template match="*[@style='draw']"><!--|*[@style='zoneDraw']-->
+		<xsl:param name="width">5cm</xsl:param>
+		<xsl:param name="height">5cm</xsl:param>
+		<fo:external-graphic src="data:image;base64,{.}" content-height="{$height}" content-width="{$width}" scaling="uniform"/>
 	</xsl:template>
 </xsl:stylesheet>
