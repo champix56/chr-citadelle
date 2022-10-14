@@ -20,7 +20,7 @@
 						<fo:block xsl:use-attribute-sets="underline title-1">
 						DEBUG DOC
 					</fo:block>
-						<xsl:apply-templates select="/*/*"/>
+						<xsl:apply-templates select="//*"/>
 					</fo:block>
 				</fo:flow>
 			</fo:page-sequence>
