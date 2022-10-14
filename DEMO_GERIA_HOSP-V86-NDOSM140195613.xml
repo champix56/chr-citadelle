@@ -3,7 +3,8 @@
 	<TXT_CONCLUSIONS newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
 	sfdgfhgjhkjlklkjlkhjvghcfgdgxfchgvjhkjlkjlhkjgvhcfgxcvbn
 		<strong>Le patient doit être <u>suivi pour des</u> problèmes d'hygiènes</strong> <br/> <br/> <br/>
-		<strong>AB<sup>2<u>exp</u></sup>=AC<sup>2</sup>
+		<strong>AB<sup>2<u>exp</u>
+			</sup>=AC<sup>2</sup>
 		</strong> <br/> <br/>
 		<s>hello</s> <br/> <br/>a<sub>23</sub> <br/> <br/>
 		<div style="text-align: center;">Bonsoir, je vais aligner mon texte hey hey hoho, c'est la foire à la saucisse</div> <br/>
@@ -35,6 +36,33 @@
 		<hr/>
 		<br/>
 	</TXT_CONCLUSIONS>
+	<tbr_temperature newline="1" title="0" style="defTab" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<row date="11/10/2022 12:11">
+			<col name="Température">39.2</col>
+			<col name="Date">11/07/2022</col>
+			<col name="Heure">08:52</col>
+		</row>
+		<row date="19/07/2022 15:45">
+			<col name="Température">37.9</col>
+			<col name="Date">09/06/2022</col>
+			<col name="Heure">09:16</col>
+		</row>
+		<row date="26/04/2022 09:22">
+			<col name="Température">38.4</col>
+			<col name="Date">01/06/2022</col>
+			<col name="Heure">18:43</col>
+		</row>
+		<row date="22/04/2022 17:40">
+			<col name="Température">36.8</col>
+			<col name="Date">25/05/2022</col>
+			<col name="Heure">15:43</col>
+		</row>
+		<row date="22/03/2022 17:39">
+			<col name="Température">39.2</col>
+			<col name="Date">13/05/2022</col>
+			<col name="Heure">08:30</col>
+		</row>
+	</tbr_temperature>
 	<sublibel/>
 	<letterData/>
 	<TXT_SYNTHESE newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Synthèse&lt;/font&gt;" unformattedLabel="Synthèse" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
