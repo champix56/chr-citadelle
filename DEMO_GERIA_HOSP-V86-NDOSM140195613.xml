@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEMO_GERIA_HOSP copie="" descr="Hospitalisation de Gériatrie" docDate="20220419" doctorEmail="" doctorFirstName="Laurent" doctorInami11="XPC125" doctorLastName="Vanlook" doctorQal="" examDate="" examHeure="" hostName="10.81.0.63" impressionTs="20220419125431" inami="XPC125" isCanceled="0" isDraft="1" isManualPrint="0" layout="" libelle1="Gériatrie" ndosm="140195613" noteDate="20220419" noteHeure="124940" noteId="950594" otherSignUser="" outputType="PDF" patBirthDate="19440508" patFirstName="Sam" patLastName="Black" patSex="m" patientAdresse="1778 Ash Street" patientCp="1400" patientLoc="NIVELLES" patientNiss="44050813304" patientNomMut="EUROMUT - MUTUALITE LIBRE " patientNumMut="44050813304" patientPays="B" pid="836523" relDoctorAdresse="959 Clinton Court" relDoctorCity="BAULERS" relDoctorCp="1401" relDoctorEmail="" relDoctorFirstName="Debby" relDoctorGsm="" relDoctorInami="186781" relDoctorLastName="Tweed" relDoctorPhone="9789826324" sej="615022879747" sejDateIn="20150406" sejDateOut="" sejPlace="NB3" serverType="PROD" signUser="Vanlook;Laurent;XPC125;;0;||||;||||;" site="NIV" spec="Gériatrie" userFirstName="Laurent" userLastName="Vanlook" ver="86">
+	<TXT_CONCLUSIONS newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+	sfdgfhgjhkjlklkjlkhjvghcfgdgxfchgvjhkjlkjlhkjgvhcfgxcvbn
+		<strong>Le patient doit être suivi pour des problèmes d'hygiènes</strong> <br/> <br/> <br/>
+		<strong>AB<sup>2</sup>=AC<sup>2</sup>
+		</strong> <br/> <br/>
+		<s>hello</s> <br/> <br/>a<sub>23</sub> <br/> <br/>
+		<div style="text-align: center;">Bonsoir, je vais aligner mon texte hey hey hoho, c'est la foire à la saucisse</div> <br/>
+		<div style="margin-left: 20px;">Et si on indentait ce texte</div> <br/>
+		<em>et si celui ci était en italique</em> <br/> <br/>
+		<ul>
+			<li>et si on mettait ceci avec des points tant qu'on y est<em> <br/>
+				</em>
+			</li>
+		</ul>
+		<u>ceci est souligné</u> <br/> <br/> <br/>
+		<ul>
+			<li>
+				<span style="color: rgb(0, 255, 0);">ce texte va <span style="background-color: rgb(44, 130, 201);">être</span> mis en puce et en couleur</span>
+			</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul> <br/>voici mon super tableau
+		<table style="width: 100%;">
+			<tbody>
+				<tr>
+					<td style="width: 50.0000%;">Colonne1</td>
+					<td style="width: 50.0000%;">Colonne2</td>
+				</tr>
+			</tbody>
+		</table>
+		<br/>
+		<hr/>
+		<br/>
+	</TXT_CONCLUSIONS>
+	<sublibel/>
+	<letterData/>
+	<TXT_SYNTHESE newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Synthèse&lt;/font&gt;" unformattedLabel="Synthèse" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<FSV2_MOTIF newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<label>Carte formulaire</label>
+		<items>
+			<item ice="0" frc="0" cci="" noPrint="0">
+				<dictionaryEntry snomed="840539006">COVID-19</dictionaryEntry>
+				<label/>
+				<text/>
+				<dStart type=""/>
+				<dEnd type=""/>
+				<dEndReason/>
+				<active label="Actif">1</active>
+				<activeStatus label=""/>
+				<status label="Confirmé">VA</status>
+				<validationStatus label=""/>
+				<type>cardPerso7</type>
+				<typeLabel>Problèmes</typeLabel>
+				<procedureType label=""/>
+				<linkType/>
+				<declarantType/>
+				<allergyType/>
+				<allergyTypeLabel/>
+			</item>
+		</items>
+	</FSV2_MOTIF>
+	<FSV2_ANT_FAM newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<label>Carte formulaire</label>
+		<items>
+			<item ice="0" frc="0" cci="0" noPrint="0">
+				<dictionaryEntry snomed="72352009">valvule aortique bicuspide</dictionaryEntry>
+				<label>valvule aortique bicuspide</label>
+				<text/>
+				<dStart type="">2022-03-22 00:00:00</dStart>
+				<dEnd type=""/>
+				<dEndReason/>
+				<active label=""/>
+				<activeStatus label=""/>
+				<status label=""/>
+				<validationStatus label="validé">validated</validationStatus>
+				<type>cardPerso1</type>
+				<typeLabel>Antécédents familiaux </typeLabel>
+				<procedureType label=""/>
+				<linkType>Père</linkType>
+				<declarantType/>
+				<allergyType/>
+				<allergyTypeLabel/>
+			</item>
+		</items>
+	</FSV2_ANT_FAM>
+	<LIB_EVOLUTION newline="0" title="1" style="lbl" label="Evolution" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_EVOLUTION newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">--------------------------------------------------------------------------------
+favorable à non opération
+au long terme. Pas de calcification. </TXT_EVOLUTION>
+	<FSV2_VACCIN newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<FSV2_ALLERGIE newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<label>Carte formulaire</label>
+		<items>
+			<item ice="0" frc="0" cci="0" noPrint="0">
+				<dictionaryEntry snomed="764146007">pénicilline</dictionaryEntry>
+				<label>pénicilline</label>
+				<text/>
+				<dStart type=""/>
+				<dEnd type=""/>
+				<dEndReason/>
+				<active label="Actif">1</active>
+				<activeStatus label=""/>
+				<status label="Confirmé">VA</status>
+				<validationStatus label="validé">validated</validationStatus>
+				<type>Allergie</type>
+				<typeLabel>Allergies - hypersensibilités - intolérances</typeLabel>
+				<procedureType label=""/>
+				<linkType/>
+				<declarantType/>
+				<allergyType/>
+				<allergyTypeLabel/>
+			</item>
+		</items>
+	</FSV2_ALLERGIE>
+	<LIB_DECES newline="0" title="1" style="lbl" label="Décès" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_DECES newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_CONCL_NEURO newline="0" title="1" style="lbl" label="Conclusion neuro" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_CONCL_NEURO newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<FSV2_PROC_MAJEURE newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<label>Carte formulaire</label>
+		<items/>
+	</FSV2_PROC_MAJEURE>
+	<FSV2_CRB_CROISSANCE newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<FSV2_DIAGNOSTIC newline="1" title="0" style="ReportHealthCard" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<label>Carte formulaire</label>
+		<items/>
+	</FSV2_DIAGNOSTIC>
+	<LIB_EXACLIN newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Examen clinique&lt;/font&gt;" unformattedLabel="Examen clinique" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_POIDS newline="0" title="1" style="lbl" label="Poids (kg)" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_POIDS newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">80</MSK_POIDS>
+	<LIB_TAILLE newline="0" title="1" style="lbl" label="Taille (cm)" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_TAILLE newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">175</MSK_TAILLE>
+	<LIB_BMI newline="0" title="1" style="lbl" label="BMI" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_BMI newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">26.12</MSK_BMI>
+	<LIB_TA newline="0" title="1" style="lbl" label="TA" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_TA newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">120/80</MSK_TA>
+	<LIB_TEMP newline="0" title="1" style="lbl" label="Température" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_TEMPERATURE newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">37°C</MSK_TEMPERATURE>
+	<LIB_POULS newline="0" title="1" style="lbl" label="Pouls" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<MSK_POULS newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">85</MSK_POULS>
+	<LIB_ANASYS newline="0" title="1" style="lbl" label="Anamnèse systématique" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_ANASYST newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">le patient se porte bien. </TXT_ANASYST>
+	<LIB_EXACLINIQUE newline="0" title="1" style="lbl" label="Examen clinique" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_EXACLIN newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">Examen clinique oK </TXT_EXACLIN>
+	<LIB_SITU_FONC newline="0" title="1" style="lbl" label="Situation fonctionnelle" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_SITFONC newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">/</TXT_SITFONC>
+	<LIB_SITPSYGER newline="0" title="1" style="lbl" label="Situation psycho-gériatrique" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_SITPSYGER newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">/</TXT_SITPSYGER>
+	<LIB_SITSOCIOFAM newline="0" title="1" style="lbl" label="Situation socio-familiale" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_SITSOCFAM newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">/</TXT_SITSOCFAM>
+	<list style="chk" label="" unformattedLabel="" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<RISQUEFUGUE newline="1" style="chk" label="Risque de fugue" unformattedLabel="Risque de fugue" isModified="0" value="1" toPrint="1" nextField="">on</RISQUEFUGUE>
+	</list>
+	<LIB_BIOLOGIE newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Biologie&lt;/font&gt;" unformattedLabel="Biologie" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_RESBIO newline="0" title="1" style="lbl" label="Résumé biologie" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_RESBIO newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_RESBACT newline="0" title="1" style="lbl" label="Résumé bactériologies" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_RESBACT newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_SEDCULT newline="0" title="1" style="lbl" label="Sédiments et culture d&apos;urines" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_SEDCULTURE newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_PLANDESOINS newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Plan de soins&lt;/font&gt;" unformattedLabel="Plan de soins" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_REMGEN newline="0" title="1" style="lbl" label="Remarques générales" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_REMGEN newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_PROPMEDIC newline="0" title="1" style="lbl" label="Proposition médicamenteuse" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PROPMEDICAMENTEUSE newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_PRISECHARGEPLURI newline="0" title="1" style="lbl" label="Prise en charge pluridisciplinaire" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_NURSING newline="0" title="1" style="lbl" label="Nursing" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PLURINURSING newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_DIETLOGO newline="0" title="1" style="lbl" label="Diététique-Logopédie" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PLURIDIET newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_KINEERGO newline="0" title="1" style="lbl" label="Kinésithérapie-Ergothérapie" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PLURIKINE newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_PSYCHOGERIA newline="0" title="1" style="lbl" label="Pyscho-Gériatrie" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PLURIPSYCHO newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_SOCIOFAM newline="0" title="1" style="lbl" label="Socio-Familiale" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_PLURISOCIO newline="1" title="0" style="txtArea" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<label566147351186215468979 newline="0" title="1" style="lbl" label="Actes médicaux" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<act566147351186215468980 newline="1" title="0" style="act" label="Acte" unformattedLabel="Acte" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<treatment type="MedAct"/>
+	</act566147351186215468980>
+	<LIB_SYNTHSESEJOUR newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Synthèse du séjour&lt;/font&gt;" unformattedLabel="Synthèse du séjour" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_PLANDESOINS_1 newline="1" title="1" style="lbl" label="&lt;font size=&apos;5&apos;&gt;Conclusions&lt;/font&gt;" unformattedLabel="Conclusions" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<LIB_CCL newline="0" title="1" style="lbl" label="Conclusions" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<TXT_CONCLUSIONS newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">Le patient doit être suivi pour des problèmes d'hygiènes</TXT_CONCLUSIONS>
+	<Evolution newline="1" title="0" style="defTab" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<SUIVI_GLASGOW newline="1" title="0" style="defTab" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<DEST_PRINC newline="1" title="0" style="recipient" label="Destinataire" unformattedLabel="" isModified="0" typeAdresse="" inami="" destAddresse="1" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<COPIES newline="1" title="0" style="cp" label="Copie(s)" unformattedLabel="" isModified="0" typeAdresse="" ccAddresse="1" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<Sejour_site newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">NIV</Sejour_site>
+	<att_test newline="1" title="0" style="upload" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<list style="chk" label="" unformattedLabel="" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<CHK_ALLERGIE_LATEX newline="0" style="chk" label="Allergie au latex" unformattedLabel="Allergie au latex" isModified="0" value="1" toPrint="1" nextField="">on</CHK_ALLERGIE_LATEX>
+	</list>
+	<list style="chk" label="" unformattedLabel="" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<checkbox639252729207461512172 newline="0" style="chk" label="Allergie aux produits iodés" unformattedLabel="Allergie aux produits iodés" isModified="0" value="1" toPrint="1" nextField="">off</checkbox639252729207461512172>
+	</list>
+	<LIB_HEUREDIA newline="0" title="1" style="lbl" label="Heure de dialyse" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<VAL_HEURE_DIA newline="1" length="20" title="0" style="txt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField=""/>
+	<richtext636852620206780511073 newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">Dialyse réalisée avec succès </richtext636852620206780511073>
+	<healthcardpediatrics>
+</healthcardpediatrics>
+	<diagnostics>
+</diagnostics>
+	<annexes/>
+</DEMO_GERIA_HOSP>

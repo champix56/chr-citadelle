@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<nom>pediatrie</nom>
+	<sections>
+		<section isMaster="true">
+			<ligne titre="true">Prof. A. <fo:inline text-decoration="underline" font-size="14">DESORBAIX</fo:inline>,</ligne>
+			<ligne titre="true">Chef de service</ligne>
+			<ligne>Fax 04/226.29.39</ligne>
+		</section>
+		<section>
+			<ligne titre="true">Medecins</ligne>
+			<ligne>Dr S. Born</ligne>
+			<ligne>A. FUMAL</ligne>
+			<ligne>Dr M. GONCE</ligne>
+			<ligne>Dr S. MYRESSIOTIS</ligne>
+			<ligne>Dr S. SHALCHIAN</ligne>
+			<ligne>Prof. J. SCHOENEN</ligne>
+			<ligne>Dr G. TIMMERMANS</ligne>
+		</section>
+		<section>
+			<ligne titre="true">Centre de Référence des Maladies Neuromusculaires</ligne>
+			<ligne>Dr S. DELSTANCHE</ligne>
+			<ligne>Prof. A. MAERTENS</ligne>
+			<ligne>DE NOORDHOUT</ligne>
+		</section>
+		<section>
+			<ligne titre="true">Hospitalisation</ligne>
+			<ligne>Salle 27 : 04/321.63.85</ligne>
+		</section>
+		<section>
+			<ligne titre="true">Rendez-vous</ligne>
+			<ligne>Tél. 04/321.60.70</ligne>
+			<ligne>EEG 24 h :</ligne>
+			<ligne>04/321.60.59</ligne>
+		</section>
+		<section>
+			<ligne titre="true">Secrétariat</ligne>
+			<ligne>Madame I. MARTINEZ</ligne>
+			<ligne>Tél : 04/321.70.80</ligne>
+		</section>
+		<section>
+			<ligne>
+				<fo:block text-decoration="underline" color="blue">
+					<fo:basic-link external-destination="https://www.citadelle.be">https://www.citadelle.be</fo:basic-link>
+				</fo:block>
+			</ligne>
+		</section>
+	</sections>
+</service>
