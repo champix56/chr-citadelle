@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [
+	<!ENTITY bullet "&#x2022;">
+	<!ENTITY cir "&#x25cb;">
+]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:import href="./styles.xsl"/>
 	<!--fonction de traitement lié a HTML-->
@@ -154,6 +158,28 @@
 				<xsl:apply-templates select="*|text()"/>
 			</fo:block>
 		</xsl:element>
+	</xsl:template>
+	<xsl:template match="ul">	
+		<fo:list-block>
+			<xsl:apply-templates select="*"/>
+		</fo:list-block>
+	</xsl:template>
+	<xsl:template match="li">
+	<fo:list-item>
+				<fo:list-item-label end-indent="label-end()">
+					<fo:block>
+						<xsl:variable name="countUL" select="count(ancestor-or-self::ul)" />
+						<xsl:choose>
+							<xsl:when test="1">&bullet;</xsl:when>
+							<xsl:when test="2">&cir;</xsl:when>
+							<xsl:otherwise>-</xsl:otherwise>
+						</xsl:choose>
+					</fo:block>
+				</fo:list-item-label>
+				<fo:list-item-body start-indent="body-start()">
+					<fo:block><xsl:apply-templates select="*|text()" /></fo:block>
+				</fo:list-item-body>
+			</fo:list-item>
 	</xsl:template>
 	<!--<fo:table>								<table>
 		<fo:table-body>							<tbody>

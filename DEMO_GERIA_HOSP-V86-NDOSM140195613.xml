@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DEMO_GERIA_HOSP copie="" descr="Hospitalisation de Gériatrie" docDate="20220419" doctorEmail="" doctorFirstName="Laurent" doctorInami11="XPC125" doctorLastName="Vanlook" doctorQal="" examDate="" examHeure="" hostName="10.81.0.63" impressionTs="20220419125431" inami="XPC125" isCanceled="0" isDraft="1" isManualPrint="0" layout="" libelle1="Gériatrie" ndosm="140195613" noteDate="20220419" noteHeure="124940" noteId="950594" otherSignUser="" outputType="PDF" patBirthDate="19440508" patFirstName="Sam" patLastName="Black" patSex="m" patientAdresse="1778 Ash Street" patientCp="1400" patientLoc="NIVELLES" patientNiss="44050813304" patientNomMut="EUROMUT - MUTUALITE LIBRE " patientNumMut="44050813304" patientPays="B" pid="836523" relDoctorAdresse="959 Clinton Court" relDoctorCity="BAULERS" relDoctorCp="1401" relDoctorEmail="" relDoctorFirstName="Debby" relDoctorGsm="" relDoctorInami="186781" relDoctorLastName="Tweed" relDoctorPhone="9789826324" sej="615022879747" sejDateIn="20150406" sejDateOut="" sejPlace="NB3" serverType="PROD" signUser="Vanlook;Laurent;XPC125;;0;||||;||||;" site="NIV" spec="Gériatrie" userFirstName="Laurent" userLastName="Vanlook" ver="86">
+	<grf_temperature newline="1" title="0" style="defTab" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
+		<row date="11/10/2022 12:11">
+			<col name="Température">39.2</col>
+			<col name="Date">11/07/2022</col>
+			<col name="Heure">08:52</col>
+		</row>
+		<row date="11/10/2022 12:11">
+			<col name="Température">39.2</col>
+			<col name="Date">11/07/2022</col>
+			<col name="Heure">10:52</col>
+		</row>
+		<row date="19/07/2022 15:45">
+			<col name="Température">37.9</col>
+			<col name="Date">09/06/2022</col>
+			<col name="Heure">09:16</col>
+		</row>
+		<row date="26/04/2022 09:22">
+			<col name="Température">38.4</col>
+			<col name="Date">01/06/2022</col>
+			<col name="Heure">18:43</col>
+		</row>
+		<row date="22/04/2022 17:40">
+			<col name="Température">36.8</col>
+			<col name="Date">25/05/2022</col>
+			<col name="Heure">15:43</col>
+		</row>
+		<row date="22/03/2022 17:39">
+			<col name="Température">39.2</col>
+			<col name="Date">13/05/2022</col>
+			<col name="Heure">08:30</col>
+		</row>
+	</grf_temperature>
 	<TXT_CONCLUSIONS newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
 	sfdgfhgjhkjlklkjlkhjvghcfgdgxfchgvjhkjlkjlhkjgvhcfgxcvbn
 		<strong>Le patient doit être <u>suivi pour des</u> problèmes d'hygiènes</strong> <br/> <br/> <br/>
@@ -13,6 +45,43 @@
 		<ul>
 			<li>et si on mettait ceci avec des points tant qu'on y est<em> <br/>
 				</em>
+			</li>
+			<li>niv II
+				<ul>
+					<li>
+						<span style="color: rgb(0, 255, 0);">ce texte va <span style="background-color: rgb(44, 130, 201);">être</span> mis en puce et en couleur</span>
+					</li>
+					<li>1</li>
+					<li>niv III
+						<ul>
+							<li>
+								<span style="color: rgb(0, 255, 0);">ce texte va <span style="background-color: rgb(44, 130, 201);">être</span> mis en puce et en couleur</span>
+							</li>
+							<li>1</li>
+							<li>NIV IV
+								<ul>
+									<li>
+										<span style="color: rgb(0, 255, 0);">ce texte va <span style="background-color: rgb(44, 130, 201);">être</span> mis en puce et en couleur</span>
+									</li>
+									<li>1</li>
+									<li>NIV V
+										<ul>
+											<li>
+												<span style="color: rgb(0, 255, 0);">ce texte va <span style="background-color: rgb(44, 130, 201);">être</span> mis en puce et en couleur</span>
+											</li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+										</ul>
+									</li>
+									<li>3</li>
+								</ul>
+							</li>
+							<li>3</li>
+						</ul>
+					</li>
+					<li>3</li>
+				</ul>
 			</li>
 		</ul>
 		<u>ceci est souligné</u> <br/> <br/> <br/>
