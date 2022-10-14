@@ -2,8 +2,8 @@
 <DEMO_GERIA_HOSP copie="" descr="Hospitalisation de Gériatrie" docDate="20220419" doctorEmail="" doctorFirstName="Laurent" doctorInami11="XPC125" doctorLastName="Vanlook" doctorQal="" examDate="" examHeure="" hostName="10.81.0.63" impressionTs="20220419125431" inami="XPC125" isCanceled="0" isDraft="1" isManualPrint="0" layout="" libelle1="Gériatrie" ndosm="140195613" noteDate="20220419" noteHeure="124940" noteId="950594" otherSignUser="" outputType="PDF" patBirthDate="19440508" patFirstName="Sam" patLastName="Black" patSex="m" patientAdresse="1778 Ash Street" patientCp="1400" patientLoc="NIVELLES" patientNiss="44050813304" patientNomMut="EUROMUT - MUTUALITE LIBRE " patientNumMut="44050813304" patientPays="B" pid="836523" relDoctorAdresse="959 Clinton Court" relDoctorCity="BAULERS" relDoctorCp="1401" relDoctorEmail="" relDoctorFirstName="Debby" relDoctorGsm="" relDoctorInami="186781" relDoctorLastName="Tweed" relDoctorPhone="9789826324" sej="615022879747" sejDateIn="20150406" sejDateOut="" sejPlace="NB3" serverType="PROD" signUser="Vanlook;Laurent;XPC125;;0;||||;||||;" site="NIV" spec="Gériatrie" userFirstName="Laurent" userLastName="Vanlook" ver="86">
 	<TXT_CONCLUSIONS newline="1" title="0" style="richetxt" label="" unformattedLabel="" isModified="0" toPrint="1" indentation="0" xmlStyle="" nextField="">
 	sfdgfhgjhkjlklkjlkhjvghcfgdgxfchgvjhkjlkjlhkjgvhcfgxcvbn
-		<strong>Le patient doit être suivi pour des problèmes d'hygiènes</strong> <br/> <br/> <br/>
-		<strong>AB<sup>2</sup>=AC<sup>2</sup>
+		<strong>Le patient doit être <u>suivi pour des</u> problèmes d'hygiènes</strong> <br/> <br/> <br/>
+		<strong>AB<sup>2<u>exp</u></sup>=AC<sup>2</sup>
 		</strong> <br/> <br/>
 		<s>hello</s> <br/> <br/>a<sub>23</sub> <br/> <br/>
 		<div style="text-align: center;">Bonsoir, je vais aligner mon texte hey hey hoho, c'est la foire à la saucisse</div> <br/>
