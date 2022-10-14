@@ -10,4 +10,18 @@
 			</fo:block>
 		</fo:block>
 	</xsl:template>
+
+	<xsl:template match="*[@style='txt' or @style='textArea']">
+		<xsl:value-of select="."/>
+	</xsl:template>
+	<xsl:template match="*[@style='lbl']">
+		<xsl:choose>
+			<xsl:when test="string-length(@unformattedLabel)>0">
+				<xsl:value-of select="@unformattedLabel"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@label"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
 </xsl:stylesheet>
