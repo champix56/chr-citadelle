@@ -3,7 +3,7 @@
 <xsl:include href="./components-html.xsl"/>
 <xsl:template match="*[@style='richetxt']">
 	<fo:block>
-			<xsl:apply-templates select="text()"/>
+			<xsl:apply-templates select="text()|*"/>
 	</fo:block>
 </xsl:template>
 <xsl:template match="*[@style='richetxt']//text()">

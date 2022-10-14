@@ -7,4 +7,7 @@
 	<xsl:attribute-set name="soulignement">
 		<xsl:attribute name="text-decoration">underline</xsl:attribute>
 	</xsl:attribute-set>
+	<xsl:attribute-set name="strong">
+		<xsl:attribute name="font-weight">900</xsl:attribute>
+	</xsl:attribute-set>
 </xsl:stylesheet>
