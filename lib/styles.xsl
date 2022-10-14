@@ -4,10 +4,11 @@
 		<xsl:attribute name="font-size">14pt</xsl:attribute>
 		<xsl:attribute name="font-weight">900</xsl:attribute>
 	</xsl:attribute-set>
-	<xsl:attribute-set name="soulignement">
+	<xsl:attribute-set name="underline">
 		<xsl:attribute name="text-decoration">underline</xsl:attribute>
 	</xsl:attribute-set>
 	<xsl:attribute-set name="strong">
 		<xsl:attribute name="font-weight">900</xsl:attribute>
 	</xsl:attribute-set>
+	
 </xsl:stylesheet>

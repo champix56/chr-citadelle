@@ -17,7 +17,7 @@
 				</xsl:call-template>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block>
-						<fo:block xsl:use-attribute-sets="soulignement title-1">
+						<fo:block xsl:use-attribute-sets="underline title-1">
 						DEBUG DOC
 					</fo:block>
 						<xsl:apply-templates select="/*/*"/>
