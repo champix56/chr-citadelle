@@ -86,8 +86,6 @@
 		<xsl:variable name="propertyValue" select="substring($propertyValueWithSemicolon,1,string-length($propertyValueWithSemicolon)-1)"/>
 		<xsl:element name="fo:block">
 			<xsl:attribute name="{$margin}"><xsl:value-of select="$propertyValue"/></xsl:attribute>
-				MARGIN - <xsl:value-of select="$margin"/>
-			<fo:block/>
 			<xsl:apply-templates select="*|text()"/>
 		</xsl:element>
 	</xsl:template>
