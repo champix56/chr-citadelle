@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<fo:layout-master-set>
+		<fo:simple-page-master master-name="premierePage" page-height="297mm" page-width="21cm">
+			<fo:region-body margin-bottom="2.5cm" margin-top="3.5cm" margin-left="4.5cm" margin-right="1.5cm"/>
+			<fo:region-before extent="3cm"/>
+			<fo:region-after extent="2cm"/>
+			<fo:region-start extent="4cm" region-name="avecCartouche"/>
+			<fo:region-end extent="1.5cm"/>
+		</fo:simple-page-master>
+		<fo:simple-page-master master-name="autresPages" page-height="297mm" page-width="21cm">
+			<fo:region-body margin-bottom="2.5cm" margin-top="3cm" margin-left="4.5cm" margin-right="1.5cm"/>
+			<fo:region-before extent="3cm"/>
+			<fo:region-after extent="2cm"/>
+			<fo:region-start extent="4cm" region-name="sansCartouche"/>
+			<fo:region-end extent="1.5cm"/>
+		</fo:simple-page-master>
+		<fo:page-sequence-master master-name="documentPrincipal">
+			<fo:repeatable-page-master-alternatives>
+				<fo:conditional-page-master-reference master-reference="premierePage" page-position="first"/>
+				<fo:conditional-page-master-reference master-reference="autresPages" page-position="rest"/>
+			</fo:repeatable-page-master-alternatives>
+		</fo:page-sequence-master>
+		<fo:simple-page-master master-name="10x15">
+			<fo:region-body/>
+		</fo:simple-page-master>
+	</fo:layout-master-set>
+	<fo:page-sequence master-reference="documentPrincipal">
+		<fo:static-content flow-name="avecCartouche">
+			<fo:block font-size="7pt" margin-left="3mm" margin-top="30mm">
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : service<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : nom<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : pediatrie</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : sections<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Prof. A. <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : fo:inline<fo:block font-size="8pt" font-style="italic">
+														<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : DESORBAIX</fo:block>
+												</fo:block>,</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Chef de service</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Fax 04/226.29.39</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Medecins</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr S. Born</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : A. FUMAL</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr M. GONCE</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr S. MYRESSIOTIS</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr S. SHALCHIAN</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Prof. J. SCHOENEN</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr G. TIMMERMANS</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Centre de Référence des Maladies Neuromusculaires</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Dr S. DELSTANCHE</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Prof. A. MAERTENS</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : DE NOORDHOUT</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Hospitalisation</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Salle 27 : 04/321.63.85</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Rendez-vous</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Tél. 04/321.60.70</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : EEG 24 h :</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 04/321.60.59</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Secrétariat</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Madame I. MARTINEZ</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Tél : 04/321.70.80</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : section<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ligne<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : fo:block<fo:block font-size="8pt" font-style="italic">
+														<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : fo:basic-link<fo:block font-size="8pt" font-style="italic">
+																<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : https://www.citadelle.be</fo:block>
+														</fo:block>
+													</fo:block>
+												</fo:block>
+											</fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>
+			</fo:block>
+		</fo:static-content>
+		<fo:static-content flow-name="sansCartouche">
+			<fo:block/>
+		</fo:static-content>
+		<fo:static-content flow-name="xsl-region-before">
+			<fo:block>
+				<fo:table background-color="skyblue" margin-left="-3cm">
+					<fo:table-body>
+						<fo:table-row>
+							<fo:table-cell>
+								<fo:block>
+									<fo:external-graphic src="./logo/logoCitadelle.png" scaling="uniform" content-height="3cm" content-width="5cm"/>
+								</fo:block>
+							</fo:table-cell>
+							<fo:table-cell>
+								<fo:block/>
+							</fo:table-cell>
+						</fo:table-row>
+					</fo:table-body>
+				</fo:table>
+			</fo:block>
+		</fo:static-content>
+		<fo:static-content flow-name="xsl-region-after">
+			<fo:block>
+				<fo:table>
+					<fo:table-column column-width="50%"/>
+					<fo:table-column column-width="50%"/>
+					<fo:table-body>
+						<fo:table-row border-bottom="0.3mm solid black">
+							<fo:table-cell>
+								<fo:block>BLACK SAM - 
+									19/04/2022<fo:block font-style="italic" font-size="6pt">
+									Imprimé le 19/04/2022 à 12:54:31 par Laurent Vanlook</fo:block>
+								</fo:block>
+							</fo:table-cell>
+							<fo:table-cell>
+								<fo:block text-align="right">pages : <fo:page-number/>
+								</fo:block>
+							</fo:table-cell>
+						</fo:table-row>
+					</fo:table-body>
+				</fo:table>
+			</fo:block>
+		</fo:static-content>
+		<fo:flow flow-name="xsl-region-body">
+			<fo:block>
+				<fo:block text-decoration="underline" font-size="14pt" font-weight="900">
+						DEBUG DOC
+					</fo:block>
+				<fo:block>
+	sfdgfhgjhkjlklkjlkhjvghcfgdgxfchgvjhkjlkjlhkjgvhcfgxcvbn
+		<fo:inline font-weight="900">Le patient doit être <fo:inline text-decoration="underline">suivi pour des</fo:inline> problèmes d'hygiènes</fo:inline> <fo:block/> <fo:block/> <fo:block/>
+					<fo:inline font-weight="900">AB<fo:inline vertical-align="super" font-size="smaller">2<fo:inline text-decoration="underline">exp</fo:inline>
+						</fo:inline>=AC<fo:inline vertical-align="super" font-size="smaller">2</fo:inline>
+					</fo:inline> <fo:block/> <fo:block/>
+					<fo:inline text-decoration="line-through">hello</fo:inline> <fo:block/> <fo:block/>a<fo:inline vertical-align="sub" font-size="smaller">23</fo:inline> <fo:block/> <fo:block/>
+					<fo:block text-align="center">Bonsoir, je vais aligner mon texte hey hey hoho, c'est la foire à la saucisse</fo:block> <fo:block/>
+					<fo:block margin-left="20px">Et si on indentait ce texte</fo:block> <fo:block/>
+					<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : em<fo:block font-size="8pt" font-style="italic">
+							<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : et si celui ci était en italique</fo:block>
+					</fo:block> <fo:block/> <fo:block/>
+					<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ul<fo:block font-size="8pt" font-style="italic">
+							<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : li<fo:block font-size="8pt" font-style="italic">
+									<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : et si on mettait ceci avec des points tant qu'on y est<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : em<fo:block font-size="8pt" font-style="italic">
+											<fo:block/>
+				label/unformat :  / <fo:block/>
+				content :  <fo:block/>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+					<fo:inline text-decoration="underline">ceci est souligné</fo:inline> <fo:block/> <fo:block/> <fo:block/>
+					<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : ul<fo:block font-size="8pt" font-style="italic">
+							<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : li<fo:block font-size="8pt" font-style="italic">
+									<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style : color: rgb(0, 255, 0); / name : span<fo:block font-size="8pt" font-style="italic">
+											<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : ce texte va <fo:block border="0.3mm solid red" padding="2mm">
+			style : background-color: rgb(44, 130, 201); / name : span<fo:block font-size="8pt" font-style="italic">
+													<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : être</fo:block>
+											</fo:block> mis en puce et en couleur</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+							<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : li<fo:block font-size="8pt" font-style="italic">
+									<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 1</fo:block>
+							</fo:block>
+							<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : li<fo:block font-size="8pt" font-style="italic">
+									<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 2</fo:block>
+							</fo:block>
+							<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : li<fo:block font-size="8pt" font-style="italic">
+									<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 3</fo:block>colon
+				
+							</fo:block>
+						</fo:block>
+					</fo:block> <fo:block/>voici mon super tableau
+		<fo:table width="100%">
+						<fo:table-body>
+							<fo:table-row>
+								<fo:table-cell width="50.0000%">
+									<fo:block>Colonne1</fo:block>
+								</fo:table-cell>
+								<fo:table-cell width="50.0000%">
+									<fo:block>Colonne2</fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+						</fo:table-body>
+					</fo:table>
+					<fo:block/>
+					<fo:block border-top="0.3mm solid black"/>
+					<fo:block/>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : defTab / name : tbr_temperature<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : row<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 39.2</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 11/07/2022</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 08:52</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : row<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 37.9</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 09/06/2022</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 09:16</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : row<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 38.4</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 01/06/2022</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 18:43</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : row<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 36.8</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 25/05/2022</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 15:43</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : row<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 39.2</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 13/05/2022</fo:block>
+								</fo:block>
+								<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : col<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 08:30</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : sublibel<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : letterData<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>Synthèse<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_MOTIF<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Carte formulaire</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : items<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : item<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dictionaryEntry<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : COVID-19</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : text<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dStart<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEnd<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEndReason<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : active<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : Actif / <fo:block/>
+				content : 1</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : activeStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : status<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : Confirmé / <fo:block/>
+				content : VA</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : validationStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : type<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : cardPerso7</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : typeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Problèmes</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : procedureType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : linkType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : declarantType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyTypeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_ANT_FAM<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Carte formulaire</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : items<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : item<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dictionaryEntry<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : valvule aortique bicuspide</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : valvule aortique bicuspide</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : text<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dStart<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 2022-03-22 00:00:00</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEnd<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEndReason<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : active<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : activeStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : status<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : validationStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : validé / <fo:block/>
+				content : validated</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : type<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : cardPerso1</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : typeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Antécédents familiaux </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : procedureType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : linkType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Père</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : declarantType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyTypeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>Evolution--------------------------------------------------------------------------------
+favorable à non opération
+au long terme. Pas de calcification. <fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_VACCIN<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_ALLERGIE<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Carte formulaire</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : items<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : item<fo:block font-size="8pt" font-style="italic">
+										<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dictionaryEntry<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : pénicilline</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : pénicilline</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : text<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dStart<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEnd<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : dEndReason<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : active<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : Actif / <fo:block/>
+				content : 1</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : activeStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : status<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : Confirmé / <fo:block/>
+				content : VA</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : validationStatus<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat : validé / <fo:block/>
+				content : validated</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : type<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Allergie</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : typeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Allergies - hypersensibilités - intolérances</fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : procedureType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : linkType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : declarantType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyType<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+										<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : allergyTypeLabel<fo:block font-size="8pt" font-style="italic">
+												<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+										</fo:block>
+									</fo:block>
+								</fo:block>
+							</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>DécèsConclusion neuro<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_PROC_MAJEURE<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Carte formulaire</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : items<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_CRB_CROISSANCE<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : ReportHealthCard / name : FSV2_DIAGNOSTIC<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : label<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : Carte formulaire</fo:block>
+						</fo:block>
+						<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : items<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>Examen cliniquePoids (kg)80Taille (cm)175BMI26.12TA120/80Température37°CPouls85Anamnèse systématiquele patient se porte bien. Examen cliniqueExamen clinique oK Situation fonctionnelle/Situation psycho-gériatrique/Situation socio-familiale/<fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : list<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : RISQUEFUGUE<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat : Risque de fugue / Risque de fugue<fo:block/>
+				content : on</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>BiologieRésumé biologieRésumé bactériologiesSédiments et culture d'urinesPlan de soinsRemarques généralesProposition médicamenteusePrise en charge pluridisciplinaireNursingDiététique-LogopédieKinésithérapie-ErgothérapiePyscho-GériatrieSocio-FamilialeActes médicaux<fo:block border="0.3mm solid red" padding="2mm">
+			style : act / name : act566147351186215468980<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat : Acte / Acte<fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : treatment<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>Synthèse du séjourConclusionsConclusions<fo:block>Le patient doit être suivi pour des problèmes d'hygiènes</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : defTab / name : Evolution<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : defTab / name : SUIVI_GLASGOW<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : recipient / name : DEST_PRINC<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat : Destinataire / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : cp / name : COPIES<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat : Copie(s) / <fo:block/>
+				content : </fo:block>
+				</fo:block>NIV<fo:block border="0.3mm solid red" padding="2mm">
+			style : upload / name : att_test<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : list<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : CHK_ALLERGIE_LATEX<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat : Allergie au latex / Allergie au latex<fo:block/>
+				content : on</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : list<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : <fo:block border="0.3mm solid red" padding="2mm">
+			style : chk / name : checkbox639252729207461512172<fo:block font-size="8pt" font-style="italic">
+								<fo:block/>
+				label/unformat : Allergie aux produits iodés / Allergie aux produits iodés<fo:block/>
+				content : off</fo:block>
+						</fo:block>
+					</fo:block>
+				</fo:block>Heure de dialyse<fo:block>Dialyse réalisée avec succès </fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : healthcardpediatrics<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 
+</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : diagnostics<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : 
+</fo:block>
+				</fo:block>
+				<fo:block border="0.3mm solid red" padding="2mm">
+			style :  / name : annexes<fo:block font-size="8pt" font-style="italic">
+						<fo:block/>
+				label/unformat :  / <fo:block/>
+				content : </fo:block>
+				</fo:block>
+			</fo:block>
+		</fo:flow>
+	</fo:page-sequence>
+</fo:root>

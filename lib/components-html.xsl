@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:import href="./styles.xsl"/>
+	<!--fonction de traitement lié a HTML-->
+	<!--fonction de traitement lié a HTML-->
+	<xsl:template name="htmlStyleProcessor">
+	<!--que si presence d'@ttrib dans le contexte actuelle-->
+	<xsl:if test="@style">
+		<xsl:variable name="indexOf">
+			<xsl:call-template name="indexOfChar">
+				<xsl:with-param name="char">:</xsl:with-param>
+				<xsl:with-param name="string" select="@style"/>
+			</xsl:call-template>
+		</xsl:variable>
+		<xsl:variable name="propriete" select="substring(@style,1,$indexOf - 1)"/>
+		<xsl:variable name="valueWithPonctuation" select="substring(@style,$indexOf + 1)"/>
+		<xsl:variable name="value" select="substring($valueWithPonctuation,2,string-length($valueWithPonctuation)-2)"/>
+		<xsl:attribute name="{$propriete}"><xsl:value-of select="$value"/></xsl:attribute>
+		</xsl:if>
+	</xsl:template>
 	<xsl:template name="indexOfChar">
 		<xsl:param name="string"/>
 		<xsl:param name="char"/>
@@ -23,17 +40,8 @@
 	</xsl:template>
 	<!--auto merge style-->
 	<xsl:template match="div" priority="2">
-		<xsl:variable name="indexOf">
-			<xsl:call-template name="indexOfChar">
-				<xsl:with-param name="char">:</xsl:with-param>
-				<xsl:with-param name="string" select="@style"/>
-			</xsl:call-template>
-		</xsl:variable>
-		<xsl:variable name="propriete" select="substring(@style,1,$indexOf - 1)"/>
-		<xsl:variable name="valueWithPonctuation" select="substring(@style,$indexOf + 1)"/>
-		<xsl:variable name="value" select="substring($valueWithPonctuation,2,string-length($valueWithPonctuation)-1)"/>
 		<xsl:element name="fo:block">
-			<xsl:attribute name="{$propriete}"><xsl:value-of select="$value"/></xsl:attribute>
+			<xsl:call-template name="htmlStyleProcessor"/>
 			<xsl:apply-templates select="*|text()"/>
 		</xsl:element>
 	</xsl:template>
@@ -89,6 +97,73 @@
 			<xsl:apply-templates select="*|text()"/>
 		</xsl:element>
 	</xsl:template>
+	<xsl:template match="table">
+		<xsl:element name="fo:table">
+			<xsl:call-template name="htmlStyleProcessor"/>
+			<xsl:choose>
+				<xsl:when test="tbody">
+					<xsl:apply-templates select="tbody|thead|tfoot"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<fo:table-body>
+						<xsl:apply-templates select="tr"/>
+					</fo:table-body>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="tbody">
+		<fo:table-body>
+			<xsl:apply-templates select="*"/>
+		</fo:table-body>
+	</xsl:template>
+	<xsl:template match="thead">
+		<fo:table-header>
+			<xsl:apply-templates select="*"/>
+		</fo:table-header>
+	</xsl:template>
+	<xsl:template match="tfoot">
+		<fo:table-footer>
+			<xsl:apply-templates select="*"/>
+		</fo:table-footer>
+	</xsl:template>
+	<xsl:template match="tr">
+		<xsl:element name="fo:table-row">
+			<xsl:call-template name="htmlStyleProcessor"/>
+			<xsl:apply-templates select="*"/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="tr">
+		<xsl:element name="fo:table-row">
+			<xsl:call-template name="htmlStyleProcessor"/>
+			<xsl:apply-templates select="*"/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="td">
+		<xsl:element name="fo:table-cell">
+			<xsl:call-template name="htmlStyleProcessor"/>
+			<fo:block>
+				<xsl:apply-templates select="*|text()"/>
+			</fo:block>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="th">
+		<xsl:element name="fo:table-cell">
+			<xsl:call-template name="htmlStyleProcessor"/>
+			<fo:block xsl:use-attribute-sets="th">
+				<xsl:apply-templates select="*|text()"/>
+			</fo:block>
+		</xsl:element>
+	</xsl:template>
+	<!--<fo:table>								<table>
+		<fo:table-body>							<tbody>
+			<fo:table-row>								<tr>
+				<fo:table-cell>								<td>/<th>
+					<fo:block></fo:block>
+				</fo:table-cell>
+			</fo:table-row>
+		</fo:table-body>
+	</fo:table>-->
 	<!--	
 
 		deprecié et remplacé par div[@style]
