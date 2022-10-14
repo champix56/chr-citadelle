@@ -141,7 +141,7 @@
 	</xsl:template>
 	<xsl:template match="td">
 		<xsl:element name="fo:table-cell">
-			<xsl:call-template name="htmlStyleProcessor"/>
+			<!--<xsl:call-template name="htmlStyleProcessor"/>-->
 			<fo:block>
 				<xsl:apply-templates select="*|text()"/>
 			</fo:block>
@@ -149,7 +149,7 @@
 	</xsl:template>
 	<xsl:template match="th">
 		<xsl:element name="fo:table-cell">
-			<xsl:call-template name="htmlStyleProcessor"/>
+			<!--<xsl:call-template name="htmlStyleProcessor"/>-->
 			<fo:block xsl:use-attribute-sets="th">
 				<xsl:apply-templates select="*|text()"/>
 			</fo:block>
