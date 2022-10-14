@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:import href="./styles.xsl"/>
+	<xsl:template name="indexOfChar">
+		<xsl:param name="string"/>
+		<xsl:param name="char"/>
+		<xsl:param name="i" select="1"/>
+		<xsl:param name="strlen" select="string-length($string)"/>
+		<xsl:choose>
+			<xsl:when test="$i>$strlen">-1</xsl:when>
+			<xsl:when test="substring($string,$i,1)=$char">
+				<xsl:value-of select="$i"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="indexOfChar">
+					<xsl:with-param name="i" select="$i+1"/>
+					<xsl:with-param name="strlen" select="$strlen"/>
+					<xsl:with-param name="string" select="$string"/>
+					<xsl:with-param name="char" select="$char"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!--auto merge style-->
+	<xsl:template match="div" priority="2">
+		<xsl:variable name="indexOf">
+			<xsl:call-template name="indexOfChar">
+				<xsl:with-param name="char">:</xsl:with-param>
+				<xsl:with-param name="string" select="@style"/>
+			</xsl:call-template>
+		</xsl:variable>
+		<xsl:variable name="propriete" select="substring(@style,1,$indexOf - 1)"/>
+		<xsl:variable name="valueWithPonctuation" select="substring(@style,$indexOf + 1)"/>
+		<xsl:variable name="value" select="substring($valueWithPonctuation,2,string-length($valueWithPonctuation)-1)"/>
+		<xsl:element name="fo:block">
+			<xsl:attribute name="{$propriete}"><xsl:value-of select="$value"/></xsl:attribute>
+			<xsl:apply-templates select="*|text()"/>
+		</xsl:element>
+	</xsl:template>
 	<xsl:template match="br">
 		<fo:block/>
 	</xsl:template>
